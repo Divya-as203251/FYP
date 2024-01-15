@@ -9,7 +9,7 @@ using System.Web.UI.WebControls;
 
 namespace CAMPUS
 {
-    public partial class deletestudent : System.Web.UI.Page
+    public partial class studentlogin : System.Web.UI.Page
     {
         SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-E1RQTFE0\SQLEXPRESS;Initial Catalog=master;Integrated Security=True");
         protected void Page_Load(object sender, EventArgs e)
@@ -19,17 +19,28 @@ namespace CAMPUS
                 con.Close();
             }
             con.Open();
-
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            String a = TextBox1.Text;
+            String b = TextBox2.Text;
             SqlCommand cmd = con.CreateCommand();
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "delete from studentform where registernum=@registernum";
-            cmd.Parameters.AddWithValue("@registernum", TextBox1.Text);
-            TextBox1.Text = "";
-            cmd.ExecuteNonQuery();
+            cmd.CommandText = "select *from studentform where registernum=@a AND dob=@b";
+            cmd.Parameters.AddWithValue("a", TextBox1.Text);
+            cmd.Parameters.AddWithValue("b", TextBox2.Text);
+            SqlDataReader reader = cmd.ExecuteReader();
+            if(reader.HasRows)
+            {
+                Response.Redirect("studmain.aspx");
+            }
+            else
+            {
+                Label3.Text = "INVALID CREDENTIALS HAVE BEEN ENTERED";
+            }
+            reader.Close();
+
+
         }
     }
 }

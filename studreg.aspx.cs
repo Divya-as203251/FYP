@@ -27,7 +27,7 @@ namespace CAMPUS
         {
             SqlCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "insert into studentform values('" + TextBox1.Text + "','" + TextBox2.Text + "','" + TextBox3.Text + "','" + TextBox4.Text + "','" + TextBox5.Text + "','" + TextBox6.Text + "','" + TextBox7.Text + "','" + TextBox8.Text + "','"+TextBox9.Text+"')";
+            cmd.CommandText = "insert into studentform values('" + TextBox1.Text + "','" + TextBox2.Text + "','" + TextBox3.Text + "','" + TextBox4.Text + "','" + TextBox5.Text + "','" + TextBox6.Text + "','" + TextBox7.Text + "','" + TextBox8.Text + "','"+TextBox9.Text+"','"+TextBox10.Text+"','"+TextBox11.Text+"')";
             cmd.ExecuteNonQuery();
             TextBox1.Text = " ";
             TextBox2.Text = " ";
@@ -38,6 +38,19 @@ namespace CAMPUS
             TextBox7.Text = " ";
             TextBox8.Text = " ";
             TextBox9.Text = "";
+            TextBox10.Text = " ";
+            TextBox11.Text = " ";
+            Response.Redirect("adminstudent.aspx");
+        }
+
+
+        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void TextBox11_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

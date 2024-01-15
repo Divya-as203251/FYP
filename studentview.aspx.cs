@@ -18,9 +18,27 @@ namespace CAMPUS
             TextBox5.Text = Request.QueryString["mailid"].ToString();
             TextBox6.Text = Request.QueryString["phone"].ToString();
             TextBox7.Text = Request.QueryString["ugper"].ToString();
-            TextBox8.Text = Request.QueryString["tweleveper"].ToString();
+            TextBox8.Text = Request.QueryString["twelveper"].ToString();
             TextBox9.Text = Request.QueryString["tenthper"].ToString();
+            TextBox11.Text = Request.QueryString["currentarrear"].ToString();
+            TextBox12.Text = Request.QueryString["historyofarrear"].ToString();
 
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("adminstudent.aspx");
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("updatestudent.aspx");
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("deletestudent.aspx");
+           
         }
     }
 }
