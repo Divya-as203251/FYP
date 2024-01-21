@@ -5,65 +5,160 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <style>
-        .box{
-            width:800px;
-            height:600px;
-            background-color:gray;
-            margin-left: 0px;
+
+
+        <style>
+
+        .*{
+            margin:0;
+            padding:0;
         }
-        .auto-style1 {
-            width: 800px;
-            height: 600px;
-            background-color: gray;
-            margin-left: 348px;
+        nav{
+            margin:0;
+            height:10px;
+            background-color:black;
+            color:white;
+            padding:50px;
+            font-family: 'Monotype Corsiva', sans-serif;
+            font-size:20px;
+         
         }
-        body{
-            background-image:url("campus.jpg");
+        li,h1,ul{
+            display:inline;
+            padding:40px;
+                
         }
-        .auto-style2 {
-            width: 355px;
-            height: 29px;
+        ul{
+            margin-left:20%;
+        }
+        li{
+            color:grey;
+            cursor:pointer;
+        }
+            li:hover{
+    color:white
+}
+            .auto-style2 {
+                width: 1774px;
+                height: 12px;
+            }
+           
+            .image{
+                background-image:url('Images/AdminLogin%20(2).jpg');
+               background-position: center -500px;
+              padding:200px;
+              margin-right:40%;
+
+               background-repeat: no-repeat; background-attachment: scroll;
+                
+
+            }
+           
+            .auto-style3 {
+                height: 763px;
+            }
+           .admin{
+               margin-left:70%;
+           }
+            .auto-style4 {
+                margin-left: 60%;
+                height: 460px;
+                width: 381px;
+            }
+            body{
+                 font-family: Arial, sans-serif;
+            
+            font-weight: normal;
+            
+            }
+            h2{
+                font-family: 'Modern No. 20', sans-serif;
+
+            }
+            .ml-auto{
+                font-family: 'Monotype Corsiva', sans-serif;
+                font-size:20px;
+            }
+            .size{
+                font-size:10px;
+            }
+             
+
+
+         .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
             position: absolute;
-            left: 715px;
-            top: 191px;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
         }
-        .auto-style3 {
-            width: 90px;
-            height: 35px;
-            position: absolute;
-            left: 823px;
-            top: 313px;
+
+        .dropdown:hover .dropdown-content {
+            display: block;
         }
-        .auto-style4 {
-            width: 239px;
-            height: 27px;
-            position: absolute;
-            left: 748px;
-            top: 256px;
+
+        .dropdown-content a {
+            color: #333;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
         }
-    </style>
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+            </style>
 </head>
-<body>
-    <center>
-    <form id="form1" runat="server">
-        <h1>
-            <asp:TextBox ID="TextBox3" runat="server" BackColor="#FFFF66" CssClass="auto-style2" ForeColor="#FF3300"></asp:TextBox>
-            COMPANY LOGIN PAGE
-        </h1>
-        <div class="auto-style1">
-            <asp:Label ID="Label1" runat="server" Text="Company Id"></asp:Label>
-            <asp:TextBox ID="TextBox1" runat="server" TextMode="Email"></asp:TextBox>
-            <br />
-            <asp:Label ID="Label2" runat="server" Text="Password"></asp:Label>
-            <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
-            <br />
-            <br />
-            <asp:HyperLink ID="HyperLink1" runat="server" ForeColor="Blue" NavigateUrl="~/comregister.aspx" CssClass="auto-style4">New user? Register Here</asp:HyperLink>
-            <br />
-            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Submit" CssClass="auto-style3" />
+ 
+<body style="height: 846px">
+        
+        <form id="form1" runat="server">
+        
+        <div>
+<nav class="auto-style2">
+    <h1> Campus Recruitment System</h1>
+    <ul>
+        <li>Home</li>
+        <li>About Us</li>
+        <div class="dropdown">
+            <li>Login</li>
+            <div class="dropdown-content">
+                <a href="#">Student Login</a>
+                <a href="#">Company Login</a>
+                <a href="#">Admin Login</a>
+            </div>
         </div>
+        <li>Placement Training</li>
+    </ul>
+</nav></div>
+<div class="auto-style3" style="background-image: url('Images/companylogin.png'); background-repeat: no-repeat;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<vr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    <div class="auto-style4"> 
+        <br />
+        <center> 
+            <h2 style="color:#000099"; >COMPANY LOGIN</h2>
+        </center>
+        <asp:Label ID="Label1" runat="server" Text="Username"></asp:Label>
+        <br />
+        <asp:TextBox ID="TextBox1" runat="server" Height="31px" Width="372px" placeholder="Enter username"></asp:TextBox>
+        <br />
+        <br />
+        <asp:Label ID="Label2" runat="server" Text="Password"></asp:Label>
+        <br />
+        <asp:TextBox ID="TextBox2" runat="server" Height="31px" Width="372px" placeholder="Enter password"></asp:TextBox>
+        
+        <center>
+
+            <span class="ml-auto"
+                    ><a href="#" class="forgot-pass">Forgot Password?</a></span
+                  ><br />
+&nbsp;<asp:Button ID="Button1" runat="server" Text="LOGIN" BackColor="#000099" ForeColor="White" Height="33px" Width="379px" />
+    </div>
     </form>
-         </center>
-</body>
-</html>
