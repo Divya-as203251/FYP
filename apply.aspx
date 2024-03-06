@@ -132,9 +132,9 @@ h2{
 </nav>
         </div><form runat="server">
           <div class="registration-container">
-      <h2>JOB APPLY</h2>  <asp:Label ID="Label12" runat="server" CssClass="auto-style24" Text="Label"></asp:Label>
- <asp:Label ID="Label33" runat="server" CssClass="auto-style25" Text="Label"></asp:Label>
- <asp:Label ID="Label34" runat="server" CssClass="auto-style26" Text="Label"></asp:Label>
+      <h2>JOB APPLY</h2>  <asp:Label ID="Label16" runat="server" CssClass="auto-style24" Text="Label"></asp:Label>
+ <asp:Label ID="Label17" runat="server" CssClass="auto-style25" Text="Label"></asp:Label>
+ <asp:Label ID="Label24" runat="server" CssClass="auto-style26" Text="Label"></asp:Label>
           <div class="form-group">
                       <asp:Label ID="Label1" runat="server" Text="Register Number"></asp:Label>
 
@@ -294,17 +294,12 @@ h2{
               </div>
                           <asp:Label ID="Label31" runat="server" ForeColor="Red" Text="Label"></asp:Label>
             <br />
-            <asp:Label ID="Label30" runat="server" Text="Label" ForeColor="#CC0000"></asp:Label>
+            <asp:Label ID="Label25" runat="server" Text="Label" ForeColor="#CC0000"></asp:Label>
             <br />
             <br />
-            <asp:Label ID="Label27" runat="server" Text="Label"></asp:Label>
-            <br />
-            <asp:Label ID="Label28" runat="server" Text="Label"></asp:Label>
-            <br />
-            <asp:Label ID="Label29" runat="server" Text="Label"></asp:Label>
-
+            <asp:Label ID="Label26" runat="server" Text="Label"></asp:Label>
+            
 </form>
-
 
 
 
