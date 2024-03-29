@@ -10,8 +10,9 @@
             width: 84px;
             height: 36px;
             position: absolute;
-            left: 708px;
-            top: 129px;
+            left: 408px;
+            top: 91px;
+            z-index: 1;
         }
                 .auto-style3 th, .auto-style3 td
  {
@@ -37,6 +38,16 @@
     }
 
 
+        .auto-style2 {
+            position: absolute;
+            top: 91px;
+            left: 320px;
+            z-index: 1;
+            width: 84px;
+            height: 36px;
+        }
+
+
     </style>
 </head>
 <body>
@@ -51,7 +62,7 @@
             <br />
             <br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="Button1" runat="server" Text="show" />
+            <asp:Button ID="Button1" runat="server" Text="show" CssClass="auto-style2" />
 &nbsp;<br />
             &nbsp;&nbsp;&nbsp;
             <asp:Button ID="Button2" runat="server" CssClass="auto-style1" OnClick="Button2_Click" Text="Send " />
