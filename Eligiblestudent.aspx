@@ -4,16 +4,16 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
-    <style type="text/css">
+    <title></title><style type="text/css">
         .auto-style1 {
-            width: 84px;
+            width: 116px;
             height: 36px;
             position: absolute;
-            left: 408px;
-            top: 91px;
+            left: 493px;
+            top: 146px;
             z-index: 1;
-        }
+                           right: 1273px;
+                       }
                 .auto-style3 th, .auto-style3 td
  {
     padding: 8px;
@@ -40,32 +40,104 @@
 
         .auto-style2 {
             position: absolute;
-            top: 91px;
-            left: 320px;
+            top: 147px;
+            left: 367px;
             z-index: 1;
-            width: 84px;
+            width: 116px;
             height: 36px;
         }
 
 
-    </style>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <h1>RETRIEVING ELIGIBLE STUDENTS</h1>
+                       .auto-style3 {
+                           position: relative;
+                           left: 0px;
+                           top: 2px;
+                       }
+                       .auto-style4 {
+                           position: relative;
+                           left: 3px;
+                           top: 6px;
+                       }
+nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+                .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+                body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+}
+
+
+
+
+    </style></head><body><form id="form1" runat="server">
+            <div>
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+
+    <div class="dropdown">
+        <a href="#login">Login</a>
+        <div class="dropdown-content">
+            <a href="#login">Student Login</a>
+            <a href="#login">Company Login</a>
+            <a href="#login">Admin Login</a>
+
+            <!-- Add more dropdown options as needed -->
+        </div>
+        </div>
+</nav>
+
+        <h2>&nbsp;</h2>
+                <h2>&nbsp; RETRIEVING ELIGIBLE STUDENTS</h2>
 
         <div>
-            <asp:Label ID="Label1" runat="server" Text="UG percentage"></asp:Label>
-            <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource1" DataTextField="ugper" DataValueField="ugper">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Label ID="Label1" runat="server" Text="UG percentage : "></asp:Label>
+            <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource1" DataTextField="ugper" DataValueField="ugper" CssClass="auto-style4">
                 <asp:ListItem>50</asp:ListItem>
             </asp:DropDownList>
             <br />
             <br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="Button1" runat="server" Text="show" CssClass="auto-style2" />
+            <asp:Button ID="Button1" runat="server" Text="Show" CssClass="auto-style2" BackColor="#000084" ForeColor="White" />
 &nbsp;<br />
             &nbsp;&nbsp;&nbsp;
-            <asp:Button ID="Button2" runat="server" CssClass="auto-style1" OnClick="Button2_Click" Text="Send " />
+            <asp:Button ID="Button2" runat="server" CssClass="auto-style1"  Text="Send " BackColor="#000084" ForeColor="White" />
             <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource2"  CellPadding="20"  GridLines="Horizontal"  BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CssClass="auto-style3" ForeColor="White" Width="1907px" Height="238px" >
                 <AlternatingRowStyle BackColor="#DCDCDC" />
                 <Columns>
