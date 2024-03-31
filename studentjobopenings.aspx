@@ -5,10 +5,72 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <style>
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+                .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+                body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+}
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
-        <h1>JOB OFFERINGS</h1>
+                    <div>
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+
+    <div class="dropdown">
+        <a href="#login">Login</a>
+        <div class="dropdown-content">
+            <a href="#login">Student Login</a>
+            <a href="#login">Company Login</a>
+            <a href="#login">Admin Login</a>
+
+            <!-- Add more dropdown options as needed -->
+        </div>
+        </div>
+</nav>
+
+        <h2>&nbsp;</h2>
+                        <h2>&nbsp;JOB OPENINGS</h2>
         <p>&nbsp;</p>
         <div>
         </div>
